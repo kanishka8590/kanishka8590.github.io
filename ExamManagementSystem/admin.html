@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard • EMS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="admin">
+  <header class="topbar">
+    <div class="brand">EMS • Admin</div>
+    <nav>
+      <button class="btn ghost" id="logoutBtn">Logout</button>
+    </nav>
+  </header>
+
+  <main class="grid-2">
+    <!-- Left column -->
+    <section class="card">
+      <h2>➕ Add Student</h2>
+      <div class="form">
+        <label>Student Name</label>
+        <input id="studentName" type="text" placeholder="Kanishka Sharma" />
+
+        <label>Student ID (username)</label>
+        <input id="studentId" type="text" placeholder="STU001" />
+
+        <label>Group (e.g. CSE-A, IT-2)</label>
+        <input id="studentGroup" type="text" placeholder="CSE-A" />
+
+        <label>Temp Password</label>
+        <input id="studentPass" type="text" placeholder="1234" value="1234" />
+
+        <button class="btn primary" id="addStudentBtn">Add Student</button>
+        <div class="msg" id="studentMsg"></div>
+      </div>
+
+      <h3 class="mt-24">👥 Students</h3>
+      <div class="table-wrap">
+        <table class="table" id="studentsTable">
+          <thead>
+            <tr><th>Name</th><th>ID</th><th>Group</th><th></th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Right column -->
+    <section class="card">
+      <h2>📝 Create Exam</h2>
+      <div class="form">
+        <label>Exam Name</label>
+        <input id="examName" type="text" placeholder="Mid-Sem CSE 2025" />
+
+        <label>Exam Date</label>
+        <input id="examDate" type="date" />
+
+        <label>Venue</label>
+        <input id="examVenue" type="text" placeholder="Block A, Room 204" />
+
+        <label>Eligible Groups (comma separated)</label>
+        <input id="examGroups" type="text" placeholder="CSE-A, CSE-B" />
+
+        <button class="btn primary" id="addExamBtn">Add Exam</button>
+        <div class="msg" id="examMsg"></div>
+      </div>
+
+      <h3 class="mt-24">📚 Exams</h3>
+      <div class="table-wrap">
+        <table class="table" id="examsTable">
+          <thead>
+            <tr><th>Name</th><th>Date</th><th>Venue</th><th>Groups</th><th></th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <section class="card wide">
+    <h2>✅ Submissions & Approvals</h2>
+
+    <div class="filters">
+      <label>Filter by Exam</label>
+      <select id="filterExam"></select>
+      <button class="btn" id="refreshSubsBtn">Refresh</button>
+    </div>
+
+    <div class="table-wrap">
+      <table class="table" id="submissionsTable">
+        <thead>
+          <tr>
+            <th>Student</th>
+            <th>Student ID</th>
+            <th>Exam</th>
+            <th>Submitted At</th>
+            <th>Status</th>
+            <th>Data</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="footer">© EMS (Front-end Demo) • LocalStorage only</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

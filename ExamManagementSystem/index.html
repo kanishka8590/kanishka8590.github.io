@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exam Management System • Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="login">
+  <div class="shell">
+    <div class="card lg">
+      <h1 class="title">Exam Management System</h1>
+      <p class="subtitle">Sign in to continue</p>
+
+      <div class="form">
+        <label>Role</label>
+        <select id="role">
+          <option value="admin">Admin</option>
+          <option value="student">Student</option>
+        </select>
+
+        <label>Username</label>
+        <input id="username" type="text" placeholder="e.g. admin or STU001" />
+
+        <label>Password</label>
+        <input id="password" type="password" placeholder="••••••" />
+
+        <button class="btn primary" id="loginBtn">Login</button>
+        <div id="loginMsg" class="msg"></div>
+      </div>
+
+      <div class="hint">
+        <strong>Demo creds</strong><br />
+        Admin → <code>admin / 12345</code><br />
+        (Add students from Admin panel to create student logins)
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
