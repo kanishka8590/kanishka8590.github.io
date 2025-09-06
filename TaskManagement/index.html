@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="main-heading">Task Management Tool</h1>
+
+  <!-- Login Form -->
+  <div id="login">
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Username" required>
+      <select id="role">
+        <option value="Manager">Manager</option>
+        <option value="Team Lead">Team Lead</option>
+        <option value="Team Member">Team Member</option>
+      </select>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <!-- Dashboard -->
+  <div id="dashboard" style="display:none;">
+    <button id="logout-btn" style="margin-bottom:20px;">Logout</button>
+
+    <!-- Manager Panel -->
+    <div id="manager-panel" style="display:none;">
+      <h2>Manager Panel</h2>
+      <input type="text" id="project-name" placeholder="Project Name">
+      <button id="add-project-btn">Add Project</button>
+      <div id="project-list"></div>
+
+      <input type="text" id="add-member-name" placeholder="Team Member Name">
+      <button id="add-member-btn">Add Member</button>
+    </div>
+
+    <!-- Team Lead Panel -->
+    <div id="lead-panel" style="display:none;">
+      <h2>Team Lead Panel</h2>
+      <input type="text" id="task-name" placeholder="Task Name">
+      <select id="assign-to"></select>
+      <button id="add-task-btn">Add Task</button>
+    </div>
+
+    <!-- Team Member Panel -->
+    <div id="team-panel" style="display:none;">
+      <h2>Team Member Panel</h2>
+      <div id="task-list"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

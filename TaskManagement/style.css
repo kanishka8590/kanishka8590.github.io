@@ -1,0 +1,128 @@
+/* Body & General */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main Heading */
+h1#main-heading {
+  margin-top: 30px;
+  font-size: 3em;
+  color: #4B79A1;
+  text-align: center;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+/* Container */
+#login, #dashboard {
+  width: 400px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Headings */
+h2, h3 {
+  margin: 15px 0;
+  color: #2C3E50;
+}
+
+/* Inputs & Selects */
+input, select {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76,175,80,0.5);
+}
+
+/* Buttons */
+button {
+  width: 50%;
+  padding: 12px;
+  margin: 15px 0;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #36d1dc, #5b86e5);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #5b86e5, #36d1dc);
+  transform: scale(1.05);
+}
+
+/* Panels */
+#manager-panel, #lead-panel, #team-panel {
+  margin-top: 20px;
+  background: #f7f9fc;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+/* Projects & Tasks */
+.project, .task {
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 15px;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.project:hover, .task:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+/* Task Status Colors */
+.task[data-status="Pending"] {
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+}
+.task[data-status="In Progress"] {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+}
+.task[data-status="Completed"] {
+  background: linear-gradient(135deg, #76b852, #8DC26F);
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  #login, #dashboard {
+    width: 90%;
+    padding: 20px;
+  }
+
+  input, select, button {
+    width: 90%;
+  }
+
+  h1#main-heading {
+    font-size: 2.2em;
+  }
+}

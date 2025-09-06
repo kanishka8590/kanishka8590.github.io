@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Dashboard • EMS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="student">
+  <header class="topbar">
+    <div class="brand">EMS • Student</div>
+    <nav>
+      <button class="btn ghost" id="logoutBtn">Logout</button>
+    </nav>
+  </header>
+
+  <main class="grid-2">
+    <!-- Available Exams (based on group) -->
+    <section class="card">
+      <h2>🗂️ Available Exams</h2>
+      <div id="availableExams" class="list"></div>
+    </section>
+
+    <!-- My Submissions -->
+    <section class="card">
+      <h2>📩 My Submissions</h2>
+      <div class="table-wrap">
+        <table class="table" id="mySubsTable">
+          <thead>
+            <tr>
+              <th>Exam</th>
+              <th>Status</th>
+              <th>Submitted At</th>
+              <th>Ticket</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal: Exam Form -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <h3 id="modalTitle">Exam Form</h3>
+      <div class="form">
+        <label>Phone</label>
+        <input id="f_phone" type="text" placeholder="+91-XXXXXXXXXX" />
+
+        <label>Email</label>
+        <input id="f_email" type="email" placeholder="name@example.com" />
+
+        <label>Preferred Center</label>
+        <input id="f_center" type="text" placeholder="Main Campus" />
+
+        <div class="actions">
+          <button class="btn" id="closeModal">Cancel</button>
+          <button class="btn primary" id="submitFormBtn">Submit</button>
+        </div>
+        <div class="msg" id="formMsg"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">© EMS (Front-end Demo) • LocalStorage only</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
