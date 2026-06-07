@@ -1,36 +1,63 @@
-# 🌐 Kanishka's Portfolio Website
+# Kanishka's GitHub Pages
 
-Welcome to my personal portfolio website!  
-This site showcases my **projects, skills, achievements, and experience** as a Computer Science Engineering student. It serves as a digital resume, providing insights into my work and passion for **software development, web technologies, and problem-solving**.
+Welcome to my GitHub Pages repository. This repository contains a collection of web development projects created to explore different technologies, improve problem-solving skills, and build practical applications.
+
+## Projects
+
+### Personal Website
+
+A responsive website showcasing my background, skills, education, and achievements.
+
+### Interactive Menu
+
+An interactive menu application featuring category-based navigation and dynamic content.
+
+### Digital Stopwatch
+
+A stopwatch application with start, pause, reset, and lap recording functionality.
+
+### Tic Tac Toe
+
+A modern Tic Tac Toe game featuring single-player and two-player modes with interactive gameplay.
+
+### Task Management System
+
+A web application designed to help users organize and manage tasks efficiently.
+
+### Shopping Cart
+
+An e-commerce shopping cart application with product management functionality.
+
+### Weather App
+
+A weather application that displays current weather information using API integration.
+
+### Exam Management System
+
+A system designed to streamline exam-related processes and management tasks.
+
+## Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript
+* Python
+* Flask
+* Git
+* GitHub
+
+## Some of the Live Projects
+
+* Digital Stopwatch: https://kanishka8590.github.io/DigitalStopwatch/
+* Exam Management System: https://kanishka8590.github.io/ExamManagementSystem/
+* Tic Tac Toe: https://kanishka8590.github.io/TicTacToe/
+* Personal Website: https://kanishka8590.github.io/PersonalPortfolio/
+
+## Connect With Me
+
+* GitHub: https://github.com/kanishka8590
+* LinkedIn: https://www.linkedin.com/in/kanishka-sharma-13abb7351
 
 ---
 
-## 🚀 Features
-- 🖥️ About Me Section  
-- 📂 Projects Showcase  
-- 🛠️ Skills & Tools  
-- 📜 Resume Download  
-- 📫 Contact Information  
-
----
-
-## 🛠️ Built With
-- **HTML5**  
-- **CSS3**  
-- **JavaScript**  
-
----
-
-## 📸 Live Demo
-🔗 [Visit My Portfolio](https://kanishka8590.github.io)
-
----
-
-## 📫 Contact Me
-- 📧 Email: [ks8590@srmist.edu.in](mailto:ks8590@srmist.edu.in)  
-- 💼 LinkedIn: [Kanishka Sharma](https://www.linkedin.com/in/kanishka-sharma-13abb7351)  
-- 📝 Resume: [View Here](https://drive.google.com/file/d/1HjMaf9jBIOGDtPV7-4oiobq8nxnJKvQs/view?usp=sharing)  
-
----
-
-⭐ If you like this project, don’t forget to **star the repo**!
+Thank you for visiting this repository.
