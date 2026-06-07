@@ -4,37 +4,41 @@ Welcome to my GitHub Pages repository. This repository contains a collection of 
 
 ## Projects
 
-### Personal Website
+### - Personal Website
 
 A responsive website showcasing my background, skills, education, and achievements.
 
-### Interactive Menu
+### - Interactive Menu
 
 An interactive menu application featuring category-based navigation and dynamic content.
 
-### Digital Stopwatch
+### - Digital Stopwatch
 
 A stopwatch application with start, pause, reset, and lap recording functionality.
 
-### Tic Tac Toe
+### - Tic Tac Toe
 
 A modern Tic Tac Toe game featuring single-player and two-player modes with interactive gameplay.
 
-### Task Management System
+### - Task Management System
 
 A web application designed to help users organize and manage tasks efficiently.
 
-### Shopping Cart
+### - Shopping Cart
 
 An e-commerce shopping cart application with product management functionality.
 
-### Weather App
+### - Weather App
 
 A weather application that displays current weather information using API integration.
 
-### Exam Management System
+### - Exam Management System
 
 A system designed to streamline exam-related processes and management tasks.
+
+### - Personal Voice Assistant
+
+A Voice assistant that listens,responds and performs tasks using voice commands.
 
 ## Technologies Used
 
