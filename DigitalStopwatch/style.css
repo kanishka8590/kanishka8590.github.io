@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.stopwatch-container {
+  text-align: center;
+  background: rgba(255,255,255,0.95);
+  padding: 40px 60px;
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  width: 450px; /* increased width to fit all buttons */
+}
+
+h1 {
+  color: #ff6f61; /* peachy title color */
+  margin-bottom: 20px;
+}
+
+/* Circle Style */
+.stopwatch-circle {
+  width: 280px;
+  height: 280px;
+  border: 12px solid #ffb28c;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #ffe1d6 90%, #ffb28c 100%);
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
+}
+
+.timer-display {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+/* Buttons */
+.controls {
+  margin-bottom: 20px;
+  display: flex;         /* arrange buttons in one line */
+  justify-content: center;
+  gap: 10px;             /* spacing between buttons */
+  flex-wrap: wrap;        /* allows wrap if window is too small */
+}
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+button#start { background: #4caf50; color: #fff; }
+button#pause { background: #ff9800; color: #fff; }
+button#reset { background: #f44336; color: #fff; }
+button#lap { background: #2196f3; color: #fff; }
+button:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.2); }
+
+/* Laps List */
+#laps {
+  list-style: none;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+  margin-top: 15px;
+}
+#laps li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  color: #555;
+}

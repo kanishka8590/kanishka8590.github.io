@@ -1,0 +1,104 @@
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s ease;
+}
+
+/* Start Section */
+.start-section {
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:#FFA500;  /* Bright orange */
+}
+.start-section h1 { 
+  font-size:48px; 
+  margin-bottom:20px; 
+}
+.start-section p { 
+  font-size:20px; 
+  margin-bottom:30px; 
+}
+.explore-btn {
+  padding:10px 20px;
+  background:#333;
+  color:white;
+  text-decoration:none;
+  font-size:18px;
+  border-radius:8px;
+  transition:background 0.3s;
+}
+.explore-btn:hover { 
+  background:#555; 
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:#333;
+  color:white;
+  z-index:1000;
+}
+.navbar ul {
+  list-style:none;
+  margin:0;
+  padding:10px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap:10px;
+}
+.navbar a {
+  color:white;
+  text-decoration:none;
+  padding:5px 10px;
+  transition:background 0.3s;
+  border-radius:5px;
+}
+.navbar a:hover { 
+  background:#555; 
+}
+
+/* Menu Container */
+.menu-container {
+  margin-top:70px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:40px;
+  padding-bottom:40px;
+}
+
+/* Food Item */
+.food-item {
+  text-align:center;
+  max-width:800px;
+  padding:20px;
+  border-radius:15px;
+  transition: transform 0.3s;
+}
+.food-image {
+  width:100%;
+  height:auto;
+  border-radius:15px;
+  cursor:pointer;
+  transition: transform 0.3s;
+}
+.food-image:hover { 
+  transform: scale(1.05); 
+}
+.food-item h2 { 
+  margin-top:15px; 
+  font-size:28px; 
+}
+.food-item p { 
+  margin-top:10px; 
+  font-size:18px; 
+  color:#333; 
+}
