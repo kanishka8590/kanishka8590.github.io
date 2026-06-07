@@ -25,7 +25,7 @@ A dynamic dashboard provides a real-time overview of tasks and project progress 
 ## **Author**
 
 **Kanishka Sharma**  
-- Web Development Intern at **CodeClause**  
+
 - GitHub: [https://github.com/kanishka8590](https://github.com/kanishka8590)  
 - LinkedIn: [https://linkedin.com/in/kanishka-sharma-13abb7351](https://linkedin.com/in/kanishka-sharma-13abb7351)
 
